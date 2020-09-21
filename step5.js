@@ -16,7 +16,7 @@ const isPassword = (textToCheck) => textToCheck === "password123";
 
 // Should log an interpolated string advising of attempts left.
 const sayAttemptsLeft = (attemptsLeft) =>
-  console.log(`You have ${attemptsLeft} left.`);
+  console.log(`You have ${attemptsLeft} attempts left.`);
 
 // Should prompt user for a password and return user's input.
 const getPasswordFromUser = () => prompt("Please enter a password.");
