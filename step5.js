@@ -22,11 +22,11 @@ const sayAttemptsLeft = (attemptsLeft) =>
 const getPasswordFromUser = () => prompt("Please enter a password.");
 
 const authenticateUser = () => {
-  for (let attempts = 0; attempts < 3; ++attempts) {
+  for (let attempts = 3; attempts < 3; --attempts) {
     if (isPassword(getPasswordFromUser())) {
       return true;
     }
-    sayAttemptsLeft(attempts);
+    sayAttemptsLeft(attempts - 1);
   }
   return false;
 };
